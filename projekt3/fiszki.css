@@ -1,0 +1,51 @@
+/*czyszczenie ustawień przeglądarki*/
+* {
+ margin: 0;
+ padding: 0;
+}
+/*ustawienie ogólne dla ciała dokumentu*/
+body {
+ font-family: arial, sans-serif;
+ font-size: 100%;
+ margin: 3em;
+ background-color: #666;
+ color: #fff;
+}
+h2, p {
+ font-size: 100%;
+ font-weight: normal;
+}
+ul {
+ list-style-type: none;
+ overflow: hidden;
+ padding: 3em;
+}
+ul li a {
+ text-decoration: none; 
+ color: #000;
+/*wszystkie karteczki maja na początku kolor żółty*/
+ background-color: #ffc;
+ display: block;
+ height: 20em;
+ width: 20em;
+ padding: 1em;
+ box-shadow: 5px 5px 7px rgba(33,33,33,.7); /*dodanie cienia*/
+ }
+ul li {
+ margin: 1em;
+ float: left;
+}
+/*kod powyżej: tworzy imitację zwykłych sticky notes
+poniżej będzie dodana czcionka, cień do karteczek (dodany do ul li a) i przekrzywienie*/
+
+ul li a {
+ text-decoration: none;
+ color: #000;
+ background-color: #ffc;
+ display: block;
+ height: 20em;
+ width: 20em;
+ padding: 1em;
+ box-shadow: 5px 5px 7px rgba(33,33,33,.7); /*dodanie cienia*/
+ transform: rotate(-6deg); /*dodanie rotacji*/
+}
