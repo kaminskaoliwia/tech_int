@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <title> Login Form </title>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="form.css">
+</html>
+
+<body>
+
+    <h1> PSY </h1>
+<h4>Wybierz ulubiona rase psa (dowolna ilosc)</h2>
+<form action="/action_page.php">
+<input type="checkbox" name="dog1" value="Husky">Moja ulubiona rasa to husky<br>
+<input type="checkbox" name="dog2" value="GoldenRetriver">Moja ulubiona rasa to golden retriver<br>
+<input type="checkbox" name="dog3" value="Pudel">Moja ulubiona rasa to pudel<br><br>
+
+<h4>Wybierz ulubiona rase psa (dowolna ilosc) (lista)</h2>
+</form>
+<form action="/action_page.php">
+<select name="dogss" size="3" multiple>
+<option value="mops">Mops</option>
+<option value="beagle">Beagle</option>
+<option value="owczarekniemiecki">Owczarek niemiecki</option>
+<option value="bernenskipiespasterski">Bernenski pies pasterski</option>
+</select>
+  <br><br>
+  <input type="submit" value="Prześlij">
+</form>
+</form>
+
+<h4> Wybierz ulubiona rase psa (tylko jedna) </h4>
+<form action="/action_page.php">
+<input type="radio" name="dog" value="Chart" checked>Moja ulubiona rasa to chart<br>
+<input type="radio" name="dog" value="Rottweiler">Moja ulubiona rasa to rottweiler<br>
+<input type="radio" name="dog" value="BostonTerrier">Moja ulubiona rasa to boston terrier<br><br>
+</form>
+
+<h4> Wybierz ulubiona rase psa (tylko jedna) (lista)</h4>
+<form action="/action_page.php">
+<select name="cars">
+<option value="basset">Basset</option>
+<option value="doberman">Doberman</option>
+<option value="bernardyn">Bernardyn</option>
+<option value="cockerspaniel">Cocker spaniel</option>
+</select>
+<br><br>
+<input type="submit">
+</form>
+
+<h4>Wyjasnij swoj wybor</h4>
+<form action="/action_page.php">
+<textarea name="message" rows="10" cols="30">...</textarea>
+<br>
+<input type="submit">
+</form>
+
+</body>
