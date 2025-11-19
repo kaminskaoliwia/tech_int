@@ -9,7 +9,8 @@ margin: 8px 0;
 display: block;
 border: 1px solid #ccc;
 box-sizing: border-box; }
-buƩon {
+
+button {
 background-color: #4caf50;
 color: #fff;
  padding: 14px 20px;
@@ -18,8 +19,7 @@ color: #fff;
  cursor: pointer;
  width: 100%;
 }
-bu
-Ʃon:hover {
+button:hover {
  opacity: 0.8;
 }
 .cancelbtn {
