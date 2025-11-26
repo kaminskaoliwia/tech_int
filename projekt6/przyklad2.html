@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Konwerter mil na kolometry</title>
+    </head>
+
+    <body>
+        <h3>Konwerter mil na kilometry</h3>
+        <script>
+            let myDistanceMiles = 130;
+            let myDistanceKM = myDistanceMiles * 1.60934;
+            let round = myDistanceKM.toFixed(2); // toFixed = konwertuje na stringu Math.round() nie
+            console.log(typeof(round));
+            document.write(`Odleglosc ${myDistanceMiles} mil odpowiada ${myDistanceKM} kilometra`);
+            document.write(`<br> Odleglosc ${myDistanceMiles} mil odpowiada ${round} kilometra`);
+        </script>
+    </body>
+</html>
