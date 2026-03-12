@@ -1,0 +1,8 @@
+
+div {
+    width: 30px; 
+    height: 30px; 
+    background-color: white; /* Domyślny kolor tła (biały) */
+    border: 1px solid #ccc; /* Dodatkowe obramowanie, żeby były widoczne */
+    margin-bottom: 5px;
+}

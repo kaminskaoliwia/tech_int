@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Galeria</title>
+    </head>
+
+    <body>
+        <h2>Galeria</h2>
+        <div id="galeria">
+            <img id="obraz", src="pies.jpg">
+        </div>
+        <style>
+            #obraz {
+                width: 300px;
+                height: 300px;
+                border-radius: 10%;
+            }
+        </style>        
+        <script>
+            const element = document.getElementById('obraz');
+            const nazwy = ["pies1.jpg", "pies2.jpg", "pies3.jpg", "pies4.jpg", "pies.jpg"]
+            let i = 0
+
+            setInterval(zdjecie, 4000)
+
+            function zdjecie() {
+                obraz.src = nazwy[i];
+                i++;
+                if (i >= nazwy.length) {
+                    i=0;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<body>
+    <div>
+        <p>Nacisnij przycisk aby uzyskac powitanie zgodne z pora dnia: </p>
+        <button onclick="myFunction()">Sprobuj</button>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                let greeting;
+                let time = new Date().getHours();
+                if ( time < 10 ) {
+                    greeting = "Good morning";
+                }
+                else if (time < 20) {
+                    greeting = "Good day";
+                }
+                else {
+                    greeting = "Good evening";
+                }
+                document.getElementById("demo").innerHTML = greeting;
+            }
+        </script>
+    </div>
+</body>

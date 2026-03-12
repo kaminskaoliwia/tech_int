@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Farenheit to Celcius</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form>
+            <p>
+                <label>Farenheit</label>
+                <input id="Far" type="number" placeholder="Farenheit" onkeyup="fartoCel(this.value)">
+            </p>
+
+            <p>
+                <label>Celsius</label>
+                <input id="Cel" type="number" placeholder="Celsius" onkeyup="celtoFar(this.value)">
+            </p>
+            <input type="reset">
+        </form>
+
+        <script>
+            function celtoFar(c) {
+                let far = (c * 9) / 5 + 32;
+                document.getElementById("Far").value = far.toFixed(2);
+            } 
+
+            function fartoCel(f) {
+                let cel = ((f - 32) * 5) / 9
+                document.getElementById("Cel").value = cel.toFixed(2)
+            }
+        </script>
+    </body>
+</html>

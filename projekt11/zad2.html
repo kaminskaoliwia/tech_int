@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<div class="bigpanel">
+
+<div class="panel">
+    <div id ="p1" class="patent">Patent 01</div>
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+</div>
+
+<div class="panel">
+    <div id="p2" class="patent">Patent 02</div>
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+</div>
+
+<div class="panel">
+    <div id="p3" class="patent">Patent 03</div>
+    <div class="item">Item 01</div>
+    <div class="item">Item 02</div>
+</div> 
+
+</div>
+</body>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+    }
+    .bigpanel {
+        display: flex;
+        flex-direction: row;
+    }
+    .panel {
+        display: flex;
+        flex-direction: column;
+    }
+    .patent {
+        background-color: lightgrey;
+        color: grey;
+        padding: 10px;
+        gap: 10px;
+    }
+    .patent:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .patent.clicked {
+    color: white;
+}
+    .item {
+        display: none;
+        padding: 5px 10px;
+        background-color: lightgrey;
+        color: grey;
+        margin-left: 10px;
+}
+
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+$(document).ready(function() {
+    $('.patent').click(function() {
+        const currentItems = $(this).nextUntil('.patent');
+        const otherItems = $('.item').not(currentItems); 
+
+        otherItems.slideUp();
+
+        if(currentItems.is(':visible')) {
+            currentItems.slideUp();
+        } else {
+            currentItems.slideDown();
+        }
+
+        $('.patent').removeClass('clicked');
+        $(this).addClass('clicked');
+    });
+});
+
+
+</script>
+</html>

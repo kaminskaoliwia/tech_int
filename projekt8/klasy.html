@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Klasy</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="klasy.css">
+    </head>
+    <body>
+<div class="container">
+    <div class = "title">Jeden</div>
+    <div class="myText">Tekst 1</div>
+    <div class = "title">Dwa</div>
+    <div class="myText">Tekst 2</div>
+    <div class = "title">Trzy</div>
+    <div class="myText">Tekst 3</div>
+</div>
+<script>
+    const title = document.querySelectorAll('.title');
+    const text = document.querySelectorAll('.myText');
+
+    title.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            console.log(el.nextElementSibling);
+            remover();
+            el.nextElementSibling.classList.add('active');
+        });
+        function remover() {
+            text.forEach((ele) => {
+                ele.classList.remove('active');
+            });
+        }
+    })
+
+</script>
+
+</body>
+</html>

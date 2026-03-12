@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atrybuty</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="atrybuty.css">
+</head>
+
+<body>
+    <h2>Operacje na atrybutach</h2>
+    <div id="white"></div>
+    <button onclick="setAt()">Ustaw atrybuty</button>
+    <button onclick="setId()">Zmien id</button>
+    <button onclick="remClass()">Wyczysc</button>
+
+  </body>
+<script>
+
+ const element = document.getElementById('white');
+
+function setAt() {
+    element.classList.add('green');
+    element.style.borderRadius = '50%';
+  }
+
+  function setId() {
+    element.id = 'orange';
+  }
+
+  function remClass() {
+    element.className = '';
+    element.style.borderRadius = '0';
+    element.id = 'white';
+  }
+</script>
+  </html>

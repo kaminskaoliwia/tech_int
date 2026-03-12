@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zajawka</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="zajawka.css">
+
+    </head>
+
+    <body>
+    <div class="container">
+        <div class = "title">Jeden</div>
+        <div class="myText">Tekst 1</div>
+        <a class="link" href="#">Pokaz</a>
+
+        <div class = "title">Dwa</div>
+        <div class="myText">Tekst 2</div>
+        <a class="link" href="#">Pokaz</a>
+
+    </div>
+    
+<script>
+    const text = document.querySelectorAll('.myText');
+    const links = document.querySelectorAll('.link');
+    
+ links.forEach((linkElement) => {
+        linkElement.addEventListener('click', (e) => {
+            const Text = linkElement.previousElementSibling; 
+
+            if (Text.classList.contains('active')) {
+                
+                Text.classList.remove('active'); 
+                linkElement.textContent = 'Pokaz';     
+
+            } else {
+                
+                Text.classList.add('active'); 
+                linkElement.textContent = 'Ukryj';  
+            }
+        });
+    });
+
+</script>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('div').animate(
+                {
+                    left: '+=50',
+                    opacity: 0.25
+                },
+                3000 // czas trwania animacji
+            );
+        });
+    </script>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid #000;
+            position: relative; /* wymagane, żeby móc
+                                   przesunąć element */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+</html>

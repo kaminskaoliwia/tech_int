@@ -1,0 +1,35 @@
+body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+
+.todo-container {
+    background-color: orange;
+    padding: 30px;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+h2 { color: white; text-shadow: 1px 1px 2px #000; }
+
+#task-list { list-style: none; padding: 0; }
+
+#task-list li {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input-group { display: flex; gap: 5px; }
+
+#task-input { flex-grow: 1; padding: 8px; border: black; }
+
+#add-btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}

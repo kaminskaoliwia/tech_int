@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="panel">
+        <img src="sml/i1.jpg" width="100" heigh="150">
+        <img src="sml/i2.jpg" width="100" heigh="150">
+        <img src="sml/i3.jpg" width="100" heigh="150">
+        <img src="sml/i4.jpg" width="100" heigh="150">
+        <img src="sml/i5.jpg" width="100" heigh="150">
+        <img src="sml/i6.jpg" width="100" heigh="150">
+    </div>
+
+    <div id="bigimage">
+        <img src="bg/i1.jpg">
+    </div>
+
+<style>
+    #panel {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+</style>
+
+<script>
+    const thumbnails = document.querySelectorAll('#panel img');
+        const bigImage = document.querySelector('#bigimage img');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                const bigSrc = thumbnail.src.replace('sml/', 'bg/');
+                bigImage.src = bigSrc;
+            });
+        });
+    </script>
+
+</script>

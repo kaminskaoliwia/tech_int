@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tecza</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="tecza.css">
+</head>
+<body>
+
+<div id="red"></div>
+<div id="orange"></div>
+<div id="yellow"></div>
+<div id="green"></div>
+<div id="blue"></div>
+<div id="purple"></div>
+<div id="pink"></div>
+
+<button onclick="tecza()">Wyświetl tęczę</button>
+
+<script>
+    function tecza() {
+        const divElements = document.getElementsByTagName('div');
+        
+        for (let i = 0; i < divElements.length; i++) {
+                const element = divElements[i];
+                const kolor = element.id;
+                element.style.backgroundColor = kolor;
+                element.style.borderColor = kolor;
+    } }
+</script>
+</body>
+</html>

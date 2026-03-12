@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+
+div {
+ width: 300px;
+ height: 300px;
+ background-color: #666;
+ margin-top: 50px;
+}
+</style>
+</head>
+
+<body>
+ <button id="clickMe">Naciśnij</button>
+ <div></div>
+ <script>
+$(document).ready(function(){
+ $('#clickMe').on('click', function() {
+ $('div').animate({
+ width: ['toggle', 'swing'],
+ height: ['toggle', 'swing'],
+ opacity: 'toggle'
+ }, 5000, 'linear');
+ });
+});
+</script>
+</body> 
